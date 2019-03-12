@@ -8,6 +8,7 @@
 > * CDH: 5.15.1
 > * MySQL Server: 5.7.21(AWS RDS Instance)
 > * MySQL Connector: 8.0.15
+> * JDK: 1.8.0
 
 **1. Cloudera Manager**
 
