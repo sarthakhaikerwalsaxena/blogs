@@ -40,3 +40,21 @@ In Activity Monitor Advanced Configuration Snippet (Safety Valve) for cmon.conf,
 <description>Enable TLS1.2 encryption</description>
 </property>
 ```
+
+**4. Navigator Audit Server**
+
+In Java Configuration Options for Navigator Audit, add:
+```
+-Dcom.cloudera.enterprise.dbutil.MySqlHandler.EXTRA_PARAMETERS=useSSL=true&requireSSL&enabledTLSProtocols=TLSv1.2
+-Djavax.net.ssl.trustStore=<path_to_truststore> -Djavax.net.ssl.trustStorePassword=<password>
+```
+
+**5. Navigator Metadata Server**
+
+In Java Configuration Options for Navigator Metadata Server, add:
+```
+-Dcom.cloudera.enterprise.dbutil.MySqlHandler.EXTRA_PARAMETERS=useSSL=true&requireSSL&enabledTLSProtocols=TLSv1.2
+-Djavax.net.ssl.trustStore=<path_to_truststore> -Djavax.net.ssl.trustStorePassword=<password>
+```
+
+
