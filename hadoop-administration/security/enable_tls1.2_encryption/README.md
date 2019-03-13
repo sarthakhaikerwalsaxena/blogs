@@ -88,3 +88,19 @@ In Sentry Server Advanced Configuration Snippet (Safety Valve) for sentry-site.x
 ```
 After making the changes, restart Sentry. 
 
+**8. Hive Metastore Server**: 
+
+In Hive Metastore Server Advanced Configuration Snippet (Safety Valve) for hive-site.xml:
+```
+<property>
+<name>javax.jdo.option.ConnectionURL</name>
+<value>jdbc:mysql://<db_host>/hms?useSSL=true&requireSSL=true&enabledTLSProtocols=TLSv1.2</value>
+<description>Enable TLS1.2 encryption</description>
+</property> 
+```
+
+In Java Configuration Options for Hive Metastore Server add the following:
+```
+-Djavax.net.ssl.trustStore=<path_to_truststore> -Djavax.net.ssl.trustStorePassword=<password>
+```
+
