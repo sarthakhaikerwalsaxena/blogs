@@ -63,6 +63,7 @@ In Java Configuration Options for Navigator Metadata Server, add:
 ```
 
 After making the changes, restart Navigator Metadata Server. 
+
 **6. Oozie**
 
 In Oozie Server Advanced Configuration Snippet (Safety Valve) for oozie-site.xml, add:
