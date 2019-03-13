@@ -94,7 +94,7 @@ In Hive Metastore Server Advanced Configuration Snippet (Safety Valve) for hive-
 ```
 <property>
 <name>javax.jdo.option.ConnectionURL</name>
-<value>jdbc:mysql://<db_host>/hms?useSSL=true&requireSSL=true&enabledTLSProtocols=TLSv1.2</value>
+<value>jdbc:mysql://<db_host>/<db_name>?useSSL=true&requireSSL=true&enabledTLSProtocols=TLSv1.2</value>
 <description>Enable TLS1.2 encryption</description>
 </property> 
 ```
