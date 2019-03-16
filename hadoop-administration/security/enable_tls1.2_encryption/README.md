@@ -125,7 +125,7 @@ In Java Configuration Options for Hive Metastore Server add the following:
 
 After making the changes, restart Hive. 
 
-***9. Hue**:
+**9. Hue**:
 
 In Hue Server Advanced Configuration Snippet (Safety Valve) for hue_safety_valve_server.ini:
 ```
