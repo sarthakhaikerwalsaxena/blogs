@@ -127,7 +127,7 @@ After making the changes, restart Hive.
 
 **9. Hue**:
 
-In Hue Server Advanced Configuration Snippet (Safety Valve) for hue_safety_valve_server.ini:
+In Hue Service Advanced Configuration Snippet (Safety Valve) for hue_safety_valve.ini:
 ```
 [desktop] 
 [[database]] 
